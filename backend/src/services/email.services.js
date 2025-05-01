@@ -15,7 +15,7 @@ transporter.verify((error, success) => {
     if (error) {
         console.error("Error en la conexión SMTP:", error);
     } else {
-        console.log("Conexión SMTP exitosa");
+        console.log("Conexión exitosa a la cuenta de correo electrónico.");
     }
 });
 

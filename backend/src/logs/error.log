@@ -23,3 +23,15 @@
 2025-04-29 21:13:59 error: Ha ocurrido un error Access denied for user ''@'localhost' (using password: YES)
 2025-04-29 21:16:52 error: Ha ocurrido un error Access denied for user ''@'localhost' (using password: YES)
 2025-04-29 21:17:08 error: Ha ocurrido un error Access denied for user ''@'localhost' (using password: YES)
+2025-04-30 22:30:16 error: Ha ocurrido un error en createUser Controller Ya existe un usuario registrado con ese Email
+2025-04-30 22:30:18 error: Ha ocurrido un error en createUser Controller Ya existe un usuario registrado con ese Email
+2025-04-30 22:30:18 error: Ha ocurrido un error en createUser Controller Ya existe un usuario registrado con ese Email
+2025-04-30 22:30:18 error: Ha ocurrido un error en createUser Controller Ya existe un usuario registrado con ese Email
+2025-04-30 22:30:19 error: Ha ocurrido un error en createUser Controller Ya existe un usuario registrado con ese Email
+2025-04-30 23:02:04 error: Ha ocurrido un error en createUser Controller El Nombre Proporcionado no cumple con el formato
+2025-04-30 23:02:04 error: Ha ocurrido un error en createUser Controller El Nombre Proporcionado no cumple con el formato
+2025-04-30 23:02:05 error: Ha ocurrido un error en createUser Controller El Nombre Proporcionado no cumple con el formato
+2025-04-30 23:02:05 error: Ha ocurrido un error en createUser Controller El Nombre Proporcionado no cumple con el formato
+2025-04-30 23:28:34 error: Ha ocurrido un error en createUser Controller El Nombre Proporcionado no cumple con el formato
+2025-04-30 23:32:20 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-04-30 23:32:26 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
