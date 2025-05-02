@@ -45,7 +45,7 @@ export const verifyTokenMiddleware = async (req, res, next) => {
         let tokenFromQuery = req.query.token
         let token = null
 
-        if (authorization && authorization.startsWith('Bearer ')) {
+        if (authorization) {
             token = authorization.split(" ")[1]
         } else if (tokenFromQuery) {
             token = tokenFromQuery

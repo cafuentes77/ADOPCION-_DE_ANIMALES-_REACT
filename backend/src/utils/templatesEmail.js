@@ -1,8 +1,8 @@
 export const crearTemplateHtml = (email, asunto, token, username) => {
-    let template;
+  let template;
 
-    if (asunto === "registro") {
-        template = `
+  if (asunto === "registro") {
+    template = `
           <html>
             <head>
               <style>
@@ -79,8 +79,8 @@ export const crearTemplateHtml = (email, asunto, token, username) => {
             </body>
           </html>
         `;
-    } else if (asunto === "recuperarPassword") {
-        template = `
+  } else if (asunto === "recuperarPassword") {
+    template = `
           <html>
             <head>
               <!-- estilos iguales al anterior -->
@@ -94,7 +94,7 @@ export const crearTemplateHtml = (email, asunto, token, username) => {
                   <p>¡Hola! <strong>${username}</strong></p>
                   <p>Hemos recibido una solicitud para recuperar tu contraseña en Refugio de Animales React. Haz clic en el botón para restablecerla:</p>
                   <div class="boton">
-                    <a href="http://localhost:5173/modificar-password/?email=${email}&token=${token}" class="button">Cambiar Contraseña</a>
+                    <a href="http://localhost:5173/change-password/?email=${email}&token=${token}" class="button">Cambiar Contraseña</a>
                   </div>
                   <p>Si no hiciste esta solicitud, ignora este correo.</p>
                 </div>
@@ -106,8 +106,8 @@ export const crearTemplateHtml = (email, asunto, token, username) => {
             </body>
           </html>
         `;
-    } else if (asunto === "nuevaValidacion") {
-        template = `
+  } else if (asunto === "nuevaValidacion") {
+    template = `
           <html>
             <head>
               <!-- estilos iguales al anterior -->
@@ -133,8 +133,8 @@ export const crearTemplateHtml = (email, asunto, token, username) => {
             </body>
           </html>
         `;
-    } else {
-        template = `
+  } else {
+    template = `
     <html>
       <head>
         <!-- mismos estilos del anterior con ajustes visuales -->
@@ -146,7 +146,7 @@ export const crearTemplateHtml = (email, asunto, token, username) => {
           </div>
           <div class="content">
             <p>¡Hola! <strong>${username}</strong></p>
-            <p>Tu contraseña fue modificada exitosamente en Refugio de Animales React. Si no realizaste este cambio, por favor contáctanos inmediatamente.</p>
+            <p>Tu contraseña fue modificada exitosamente en Refugio de Animales React. Si no realizaste este cambio, por favor contáctenos inmediatamente.</p>
           </div>
           <div class="button-container">
             <a href="http://localhost:5173/login" class="button">Iniciar Sesión</a>
@@ -159,7 +159,7 @@ export const crearTemplateHtml = (email, asunto, token, username) => {
       </body>
     </html>
   `;
-    }
+  }
 
-    return template;
+  return template;
 };

@@ -103,8 +103,8 @@ export const ChangePasswordForm = () => {
                         {errors.formatPassword && (
                             <span className="bg-red-600">
                                 La contraseña debe contener 9 caracteres, 4
-                                letras, 4 números, un caracter especial y como
-                                mínimo una mayuscula, una minúscula
+                                letras, 4 números, un carácter especial y como
+                                mínimo una mayúscula, una minúscula
                             </span>
                         )}
                         <div className="mb-6">
@@ -143,7 +143,7 @@ export const ChangePasswordForm = () => {
                                 type="submit"
                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             >
-                                Cambiar Contrañseña
+                                Cambiar Contraseña
                             </button>
                         </div>
                     </form>

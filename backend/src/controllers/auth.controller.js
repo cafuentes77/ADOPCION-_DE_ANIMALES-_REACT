@@ -43,7 +43,7 @@ export const login = async (req, res) => {
 
         res.status(200).json({
             code: 200,
-            message: "Usuario logueado con correctamente",
+            message: "Usuario logueado correctamente",
             token: req.token
         })
     } catch (error) {
@@ -70,9 +70,9 @@ export const forgotPassword = async (req, res) => {
         }
 
         const username = `${user.nombre} ${user.apellido}`
-        const token = await createToken(email, "5m")
+        const token = createToken(email, "5m")
 
-        sendEmail(email, "recuperar password", username, token)
+        sendEmail(email, "recuperarPassword", username, token)
 
         res.status(200).json({
             code: 200,
@@ -91,6 +91,38 @@ export const forgotPassword = async (req, res) => {
 
 export const changePassword = async (req, res) => {
     try {
+        const { email } = req.params
+        const { password } = req.body
+
+        const user = await Usuario.findOne({
+            where: {
+                email
+            }
+        })
+        if (!user) {
+            return res.status(400).json({
+                code: 400,
+                message: "No hay ningún usuario con ese email"
+            })
+        }
+        const hash = hashPassword(password)
+        await Usuario.update(
+            {
+                password: hash
+            }, {
+            where: {
+                email
+            }
+        }
+        );
+        const username = `${user.nombre} ${user.apellido}`
+
+        sendEmail(email, "changePassword", username, null)
+
+        res.status(200).json({
+            code: 200,
+            message: "Contraseña cambiada con éxito"
+        });
 
     } catch (error) {
         console.log(error);

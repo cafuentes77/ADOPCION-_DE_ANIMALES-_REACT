@@ -26,7 +26,7 @@ export const createMailOptions = (email, asunto, token, username) => {
     if (asunto === "registro") {
         asuntoCorreo = "Bienvenido a Proyecto GDP "
     } else {
-        asuntoCorreo = "Recuperación Contraseña"
+        asuntoCorreo = "Recuperar Password"
     }
 
 

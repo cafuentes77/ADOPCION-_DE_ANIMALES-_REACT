@@ -95,7 +95,7 @@ export const RegisterForm = () => {
                     />
                 </div>
                 <span className={`ms-9 text-red-600 font-semibold ${errors.nombre ? "block" : "hidden"}`}>
-                    El nombre debe contener mínimo 2 caracteres
+                    El apellido debe contener mínimo 2 caracteres
                 </span>
 
                 <div className="flex justify-center items-center space-x-4">
@@ -109,8 +109,8 @@ export const RegisterForm = () => {
                         className="flex w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:ring-indigo-300"
                     />
                 </div>
-                <span className={`ms-9 text-red-600 font-semibold ${errors.nombre ? "block" : "hidden"}`}>
-                    El nombre debe contener mínimo 2 caracteres
+                <span className={`ms-9 text-red-600 font-semibold ${errors.email ? "block" : "hidden"}`}>
+                    El formato de email es incorrecto
                 </span>
 
                 <div className="flex justify-center items-center space-x-4">
@@ -126,8 +126,8 @@ export const RegisterForm = () => {
                         className="flex w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:ring-indigo-300"
                     />
                 </div>
-                <span className={`ms-9 text-red-600 font-semibold ${errors.nombre ? "block" : "hidden"}`}>
-                    El nombre debe contener mínimo 2 caracteres
+                <span className={`ms-9 text-red-600 font-semibold ${errors.password ? "block" : "hidden"}`}>
+                    La contraseña debe contener mínimo 8 caracteres, una mayúscula, un número y un carácter especial
                 </span>
 
                 <div className="flex justify-center items-center space-x-4">
@@ -143,8 +143,8 @@ export const RegisterForm = () => {
                         className="flex w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:ring-indigo-300"
                     />
                 </div>
-                <span className={`ms-9 text-red-600 font-semibold ${errors.nombre ? "block" : "hidden"}`}>
-                    El nombre debe contener mínimo 2 caracteres
+                <span className={`ms-9 text-red-600 font-semibold ${errors.repeatPassword ? "block" : "hidden"}`}>
+                    La contraseña debe contener mínimo 8 caracteres, una mayúscula, un número y un carácter especial
                 </span>
 
                 <div className="flex justify-center items-center space-x-4">
@@ -158,8 +158,8 @@ export const RegisterForm = () => {
                         className="flex w-full px-4 py-2 border border-gray-400 rounded-lg shadow-sm focus:ring-indigo-300"
                     />
                 </div>
-                <span className={`ms-9 text-red-600 font-semibold ${errors.nombre ? "block" : "hidden"}`}>
-                    El nombre debe contener mínimo 2 caracteres
+                <span className={`ms-9 text-red-600 font-semibold ${errors.telefono ? "block" : "hidden"}`}>
+                    El teléfono debe contener mínimo 11 caracteres
                 </span>
 
                 <div className="flex justify-center w-full">
