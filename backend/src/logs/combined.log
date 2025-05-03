@@ -126,3 +126,94 @@
 2025-05-01 23:14:11 info: Conexión a la base de datos establecida correctamente.
 2025-05-01 23:14:11 info: Modelos sincronizados correctamente.
 2025-05-01 23:14:11 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:48:33 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:48:33 info: Modelos sincronizados correctamente.
+2025-05-01 23:48:33 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:48:52 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:48:52 info: Modelos sincronizados correctamente.
+2025-05-01 23:48:52 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:49:19 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:49:19 info: Modelos sincronizados correctamente.
+2025-05-01 23:49:19 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:51:10 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:51:10 info: Modelos sincronizados correctamente.
+2025-05-01 23:51:10 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:53:31 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:53:31 info: Modelos sincronizados correctamente.
+2025-05-01 23:53:31 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:54:32 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:54:32 info: Modelos sincronizados correctamente.
+2025-05-01 23:54:32 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:55:34 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:55:34 info: Modelos sincronizados correctamente.
+2025-05-01 23:55:34 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:57:41 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:57:41 info: Modelos sincronizados correctamente.
+2025-05-01 23:57:41 info: Servidor escuchando en el puerto: 3000
+2025-05-01 23:59:52 info: Conexión a la base de datos establecida correctamente.
+2025-05-01 23:59:52 info: Modelos sincronizados correctamente.
+2025-05-01 23:59:52 info: Servidor escuchando en el puerto: 3000
+2025-05-02 14:19:26 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 14:19:26 info: Modelos sincronizados correctamente.
+2025-05-02 14:19:26 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:14:08 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:14:08 info: Modelos sincronizados correctamente.
+2025-05-02 15:14:08 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:16:35 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:16:35 info: Modelos sincronizados correctamente.
+2025-05-02 15:16:35 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:17:52 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:17:53 info: Modelos sincronizados correctamente.
+2025-05-02 15:17:53 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:18:29 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:18:29 info: Modelos sincronizados correctamente.
+2025-05-02 15:18:29 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:18:54 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:18:54 info: Modelos sincronizados correctamente.
+2025-05-02 15:18:54 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:25:17 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:25:17 info: Modelos sincronizados correctamente.
+2025-05-02 15:25:17 info: Servidor escuchando en el puerto: 3000
+2025-05-02 15:28:28 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 15:28:29 info: Modelos sincronizados correctamente.
+2025-05-02 15:28:29 info: Servidor escuchando en el puerto: 3000
+2025-05-02 18:50:53 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-05-02 18:51:54 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-02 18:52:35 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-02 18:55:30 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 18:55:30 info: Modelos sincronizados correctamente.
+2025-05-02 18:55:30 info: Servidor escuchando en el puerto: 3000
+2025-05-02 18:57:04 error: Ha ocurrido un error en createUser Controller data is not defined
+2025-05-02 18:57:32 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 18:57:32 info: Modelos sincronizados correctamente.
+2025-05-02 18:57:32 info: Servidor escuchando en el puerto: 3000
+2025-05-02 19:30:07 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 19:30:07 info: Modelos sincronizados correctamente.
+2025-05-02 19:30:07 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:15:37 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:15:38 info: Modelos sincronizados correctamente.
+2025-05-02 20:15:38 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:20:29 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:20:30 info: Modelos sincronizados correctamente.
+2025-05-02 20:20:30 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:21:29 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:21:29 info: Modelos sincronizados correctamente.
+2025-05-02 20:21:29 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:37:32 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:37:33 info: Modelos sincronizados correctamente.
+2025-05-02 20:37:33 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:40:49 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:40:49 info: Modelos sincronizados correctamente.
+2025-05-02 20:40:49 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:43:54 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:43:54 info: Modelos sincronizados correctamente.
+2025-05-02 20:43:54 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:48:25 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:48:25 info: Modelos sincronizados correctamente.
+2025-05-02 20:48:25 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:49:06 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:49:07 info: Modelos sincronizados correctamente.
+2025-05-02 20:49:07 info: Servidor escuchando en el puerto: 3000
+2025-05-02 20:49:31 info: Conexión a la base de datos establecida correctamente.
+2025-05-02 20:49:31 info: Modelos sincronizados correctamente.
+2025-05-02 20:49:31 info: Servidor escuchando en el puerto: 3000

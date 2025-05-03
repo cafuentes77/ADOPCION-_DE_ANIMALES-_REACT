@@ -1,7 +1,9 @@
 import express from "express"
 import cors from "cors"
-import authRoutes  from "./routes/auth.routes.js"
-import {errorHandler} from "./middlewares/errors.middlewares.js"
+import authRoutes from "./routes/auth.routes.js"
+import adminRoutes from "./routes/admin.routes.js"
+import animalesRoutes from "./routes/animal.routes.js"
+import { errorHandler } from "./middlewares/errors.middlewares.js"
 import fileUpload from "express-fileupload";
 import * as path from "path";
 import { fileURLToPath } from "url";
@@ -13,7 +15,7 @@ export const app = express()
 
 //MIDDLEWARES
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload())
 app.use(cors());
 
@@ -23,7 +25,8 @@ app.use("/public", express.static(__dirname + "/public"));
 
 //Endpoints
 app.use("/api/v1/auth", authRoutes)
-
+app.use("/api/v1/admin", adminRoutes)
+app.use("/api/v1/animales", animalesRoutes)
 
 //Errors Handler
 app.use(errorHandler)

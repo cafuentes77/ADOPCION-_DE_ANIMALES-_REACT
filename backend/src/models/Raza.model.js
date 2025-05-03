@@ -15,7 +15,7 @@ export const Raza = sequelize.define('Raza', {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    
+
 }, {
     tableName: 'razas',
     timestamps: true,

@@ -36,3 +36,7 @@
 2025-04-30 23:32:20 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
 2025-04-30 23:32:26 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
 2025-05-01 23:12:52 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-02 18:50:53 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-05-02 18:51:54 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-02 18:52:35 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-02 18:57:04 error: Ha ocurrido un error en createUser Controller data is not defined
