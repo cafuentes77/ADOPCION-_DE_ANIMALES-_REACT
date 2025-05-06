@@ -11,7 +11,7 @@ export const Especie = sequelize.define('Especie', {
         type: DataTypes.STRING(100),
         allowNull: false,
     },
-    
+
 }, {
     tableName: 'especies',
     timestamps: true,

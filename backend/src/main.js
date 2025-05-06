@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import authRoutes from "./routes/auth.routes.js"
 import adminRoutes from "./routes/admin.routes.js"
-import animalesRoutes from "./routes/animal.routes.js"
+import animalesRoutes from "./routes/animales.routes.js"
 import { errorHandler } from "./middlewares/errors.middlewares.js"
 import fileUpload from "express-fileupload";
 import * as path from "path";

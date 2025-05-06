@@ -56,25 +56,25 @@ export const ModalCrear = ({ setIsOpen, razas, especies }) => {
                         value={form.nombre}
                         onChange={handleChange}
                         placeholder="Nombre"
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+                        className="w-full border  bg-sky-100 border-gray-300 rounded px-3 py-2 text-sm"
                     />
                     <input
                         name="edad"
                         value={form.edad}
                         onChange={handleChange}
                         placeholder="Edad"
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+                        className="w-full border  bg-sky-100 border-gray-300 rounded px-3 py-2 text-sm"
                     />
                     <input
                         name="descripcion"
                         value={form.descripcion}
                         onChange={handleChange}
                         placeholder="Descripción"
-                        className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+                        className="w-full border  bg-sky-100 border-gray-300 rounded px-3 py-2 text-sm"
                     />
                     <div className="flex flex-col gap-2">
                         <select
-                            className="border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-md shadow-sm text-sm px-2 py-2"
+                            className="border-gray-300 bg-sky-100 focus:ring-blue-500 focus:border-blue-500 rounded-md shadow-sm text-sm px-2 py-2"
                             onChange={handleChange}
                             name="especie"
                             value={form.especie}
@@ -88,7 +88,7 @@ export const ModalCrear = ({ setIsOpen, razas, especies }) => {
                         </select>
 
                         <select
-                            className="border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-md shadow-sm text-sm px-2 py-2"
+                            className="border-gray-300  bg-sky-100 focus:ring-blue-500 focus:border-blue-500 rounded-md shadow-sm text-sm px-2 py-2"
                             onChange={handleChange}
                             name="raza"
                             value={form.raza}

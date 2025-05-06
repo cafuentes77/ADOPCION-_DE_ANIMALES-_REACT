@@ -2,16 +2,14 @@ import { useState, useEffect } from "react";
 import { AnimalTable } from "./components/AnimalTable";
 
 export const AnimalAdminPanelPage = () => {
-    const [animales, setAnimales] = useState([]);
     const [isOpen, setIsOpen] = useState(false)
+    const [animales, setAnimales] = useState([]);
     const [razas, setRazas] = useState([])
     const [especies, setEspecies] = useState([])
 
     const getAnimales = async () => {
         try {
-            const response = await fetch(
-                "http://localhost:3000/api/v1/animales"
-            );
+            const response = await fetch("http://localhost:3000/api/v1/animales");
             const data = await response.json();
             if (data.code === 200) {
                 setAnimales(data.data);

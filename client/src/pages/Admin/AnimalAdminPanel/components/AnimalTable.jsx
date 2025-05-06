@@ -47,7 +47,7 @@ export const AnimalTable = ({ animales, setIsOpen, isOpen, razas, especies }) =>
             formData.append("id", animalID);
 
             const requestOptions = {
-                method: "delete",
+                method: "DELETE",
             }
             console.log(requestOptions);
             const url = `http://localhost:3000/api/v1/animales/eliminar-animal/${animalID}`
@@ -135,7 +135,8 @@ export const AnimalTable = ({ animales, setIsOpen, isOpen, razas, especies }) =>
                                 <td className="px-6 py-4 text-sm text-gray-800">
                                     <div className="flex justify-center items-center min-h-full">
                                         <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-200"
-                                            onClick={() => handleDelete(animal.id)}>
+                                            onClick={() => handleDelete(animal.id)}
+                                        >
                                             Eliminar
                                         </button>
                                     </div>
