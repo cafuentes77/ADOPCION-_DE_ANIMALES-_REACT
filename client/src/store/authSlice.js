@@ -12,17 +12,40 @@ const authSlice = createSlice({
     initialState,
     reducers: {
         login: (state, action) => {
-            state.token = action.payload.token;
+            const token = action.payload;
+            state.token = token;
             state.isAuthenticated = true;
-            localStorage.setItem('token', action.payload.token);
-            const decodedToken = jwtDecode(action.payload.token);
-            state.usuario = decodedToken;
+            state.usuario = jwtDecode(token);
+            localStorage.setItem('token', token);
+
         },
         logout: (state) => {
+            state.usuario = null;
             state.token = null;
             state.isAuthenticated = false;
-            state.usuario = null;
-            localStorage.removeItem('token');
+            localStorage.clear();
         },
-    },
+        setAuthFromStorage: (state) => {
+            const token = localStorage.getItem('token');
+            if (token) {
+                try {
+                    const decoded = jwtDecode(token);
+                    const now = Date.now() / 1000;
+                    if (decoded.exp > now) {
+                        state.token = token;
+                        state.isAuthenticated = true;
+                        state.usuario = decoded.data;
+                    } else {
+                        localStorage.clear();
+                    }
+                } catch (error) {
+                    localStorage.clear();
+                }
+            }
+        }
+    }
 });
+
+export const { login, logout, setAuthFromStorage } = authSlice.actions;
+export default authSlice.reducer;
+/* esta estructura se usa para crear un reducer que maneja el estado de autenticación */

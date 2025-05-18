@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
+import { useSelector } from "react-redux";
 
 export const DetalleAnimal = () => {
 
     const { id } = useParams()
     const [animal, setAnimal] = useState("")
     const { enqueueSnackbar } = useSnackbar();
+    const { usuario } = useSelector((state) => state.auth);
+    console.log(usuario);
 
     const handleClick = async () => {
         try {
