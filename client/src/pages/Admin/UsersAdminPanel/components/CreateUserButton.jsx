@@ -1,6 +1,6 @@
 
 
-export const CreateButton = ({ setIsOpen, setModo }) => {
+export const CreateUserButton = ({ setIsOpen, setModo }) => {
 
     const handleCreate = () => {
         try {
@@ -19,7 +19,7 @@ export const CreateButton = ({ setIsOpen, setModo }) => {
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={handleCreate}
                 >
-                    Crear Animal
+                    Crear Usuario
                 </button>
             </div>
         </>

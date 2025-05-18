@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import { UserTable } from './components/UserTable'
 import { UserDetails } from './components/UserDetails'
+import { ModalCrearUsuarios } from './components/ModalCrearUsuarios';
 
 export const UserAdminPanelPage = () => {
     const [users, setUsers] = useState([]);
+    const [isOpen, setIsOpen] = useState(false)
+    const [modo, setModo] = useState("")
 
     const getUsers = async () => {
         try {
@@ -34,7 +37,8 @@ export const UserAdminPanelPage = () => {
     return (
         <>
             <UserDetails />
-            <UserTable users={users} />
+            <UserTable setIsOpen={setIsOpen} users={users} setModo={setModo} />
+            {isOpen && <ModalCrearUsuarios modo={modo} setIsOpen={setIsOpen} />}
         </>
     )
 }

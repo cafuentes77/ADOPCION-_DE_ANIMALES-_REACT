@@ -5,9 +5,11 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { MdOutlinePhoneIphone } from "react-icons/md";
 import { useSnackbar } from "notistack";
+import { useNavigate } from "react-router-dom";
 
 export const RegisterForm = () => {
 
+    const navigate = useNavigate()
     const [showPassword, setShowPassword] = useState(false)
     const { enqueueSnackbar } = useSnackbar()
     const [registerForm, setRegisterForm] = useState({
@@ -55,6 +57,7 @@ export const RegisterForm = () => {
 
             if (data.code === 201) {
                 enqueueSnackbar(data.message, { variant: "success" })
+                navigate("/")
             } else {
                 enqueueSnackbar(data.message, { variant: "error" })
             }
@@ -67,7 +70,7 @@ export const RegisterForm = () => {
 
     return (
         <>
-            <form className="space-y-4 w-1/4 mt-8" onSubmit={handleSubmit}>
+            <form className="space-y-4 mt-8" onSubmit={handleSubmit}>
                 <div className="flex justify-center items-center space-x-4">
                     <FaUserAstronaut />
                     <input

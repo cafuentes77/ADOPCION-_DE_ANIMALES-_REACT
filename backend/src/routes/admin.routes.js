@@ -1,12 +1,12 @@
 import { Router } from "express";
-import { getAllUsers } from "../controllers/admin.controller.js";
+import { changeStateUser, getAllUsers } from "../controllers/admin.controller.js";
 
 
 
 const router = Router()
 
 router.get("/", getAllUsers)
-
+router.put("/cambiar-estado", changeStateUser)
 
 
 

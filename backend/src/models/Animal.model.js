@@ -31,8 +31,12 @@ export const Animal = sequelize.define('Animal', {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
+    imagen: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+    },
 
-    
+
 }, {
     tableName: 'animales',
     timestamps: true,

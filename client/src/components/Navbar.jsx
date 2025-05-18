@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { IoIosHome } from "react-icons/io";
 import { GoPersonFill } from "react-icons/go";
+import { FaDog } from "react-icons/fa6";
+import { RiAdminFill } from "react-icons/ri";
+
 
 export const Navbar = () => {
     const token = localStorage.getItem("token")
@@ -10,15 +13,14 @@ export const Navbar = () => {
         localStorage.removeItem("usuario")
         location.href = "/"
     }
-
     return (
         <nav className="bg-white shadow-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                     <div className="flex-shrink-0 flex items-center">
                         <img
-                            className="h-8 w-auto"
-                            src="https://i.bstr.es/drivingeco/2025/01/Deepseek-r1-logo-880x495.webp"
+                            className="h-12 w-auto"
+                            src="https://pbs.twimg.com/profile_images/1039525888730308608/-8viHVUh_400x400.jpg"
                             alt="Logo"
                         />
                     </div>
@@ -30,19 +32,25 @@ export const Navbar = () => {
                             </NavLink>
                         </h4>
 
+                        <h4 className="cursor-pointer flex items-center font-bold text-lg text-black transition-all duration-300 hover:text-slate-500 hover:translate-x-1">
+                            <NavLink to={"/admin/animales"} className="flex items-center">
+                                <FaDog className="mr-2" /> Panel Animales
+                            </NavLink>
+                        </h4>
+
+                        <h4 className="cursor-pointer flex items-center font-bold text-lg text-black transition-all duration-300 hover:text-slate-500 hover:translate-x-1">
+                            <NavLink to={"/admin/usuarios"} className="flex items-center">
+                                <RiAdminFill className="mr-2" /> Panel Usuarios
+                            </NavLink>
+                        </h4>
+
                         {
                             token && <h4 className="cursor-pointer flex items-center font-bold text-lg text-black transition-all duration-300 hover:text-slate-500 hover:translate-x-1">
-                                <NavLink to={"/micuenta"} className="flex items-center">
+                                <NavLink className="flex items-center">
                                     <GoPersonFill className="mr-2" /> Mi Cuenta
                                 </NavLink>
                             </h4>
                         }
-
-                        <h4 className="cursor-pointer flex items-center font-bold text-lg text-black transition-all duration-300 hover:text-slate-500 hover:translate-x-1">
-                            <NavLink to={"/Contacto"} className="flex items-center">
-                                <GoPersonFill className="mr-2" /> Contacto
-                            </NavLink>
-                        </h4>
 
                         {
                             !token && <h4 className="cursor-pointer flex items-center font-bold text-lg text-black transition-all duration-300 hover:text-slate-500 hover:translate-x-1">
@@ -59,7 +67,6 @@ export const Navbar = () => {
                                 </NavLink>
                             </h4>
                         }
-
                     </div>
                 </div>
             </div>

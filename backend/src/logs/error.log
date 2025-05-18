@@ -40,3 +40,10 @@
 2025-05-02 18:51:54 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
 2025-05-02 18:52:35 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
 2025-05-02 18:57:04 error: Ha ocurrido un error en createUser Controller data is not defined
+2025-05-15 19:55:29 error: Ha ocurrido un error en createUser Controller El Apellido Proporcionado no cumple con el formato
+2025-05-15 19:56:31 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-05-15 19:56:35 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-05-15 19:56:50 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-05-15 19:57:04 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
+2025-05-15 19:57:16 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-17 20:11:43 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
