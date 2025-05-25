@@ -4,7 +4,7 @@ import { useSnackbar } from "notistack";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
-export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
+export const UserTable = ({ users, setUsers, setIsOpenUserModal, setModo, handleUpdate }) => {
     const [usersData, setUsersData] = useState([]);
     const { enqueueSnackbar } = useSnackbar();
 
@@ -12,10 +12,28 @@ export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
         setUsersData(users);
     }, [users]);
 
+    const handleDelete = async (id) => {
+        try {
+
+            const requestOptions = {
+                method: "DELETE",
+            }
+            const response = await fetch(`http://localhost:3000/api/v1/admin/delete-user/${id}`, requestOptions);
+            const data = await response.json();
+            if (data.code === 200) {
+                enqueueSnackbar(data.message, { variant: "success" });
+            } else {
+                enqueueSnackbar(data.message, { variant: "error" });
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     const handleChange = async (e, userID) => {
         const nuevoRol = e.target.value === "Administrador";
 
-        setUsersData((prev) =>
+        setUsers((prev) =>
             prev.map((user) =>
                 user.id === userID ? { ...user, rol: nuevoRol } : user
             )
@@ -43,7 +61,7 @@ export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
     return (
         <div>
             <div className="w-[57%] flex justify-center">
-                <CreateUserButton setIsOpen={setIsOpen} setModo={setModo} />
+                <CreateUserButton setIsOpenUserModal={setIsOpenUserModal} setModo={setModo} />
             </div>
             <div className="flex justify-center mt-5">
                 <table className="w-[50%] divide-y divide-gray-200 shadow-md rounded-lg overflow-hidden">
@@ -71,7 +89,7 @@ export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                        {usersData.map((user) => (
+                        {users.map((user) => (
                             <tr key={user.id} className="hover:bg-gray-50 transition">
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
                                     {user.nombre}
@@ -82,7 +100,8 @@ export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">
                                     <select
                                         className="border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-md shadow-sm text-sm px-2 py-2"
-                                        value={user.rol ? "Administrador" : "Usuario"}
+                                        name="admin"
+                                        value={user.admin ? "Administrador" : "Usuario"}
                                         onChange={(e) => handleChange(e, user.id)}
                                     >
                                         <option value="Administrador">Administrador</option>
@@ -102,7 +121,7 @@ export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
                                 <td className="px-6 py-4 text-sm text-gray-800">
                                     <div className="flex justify-center items-center min-h-full">
                                         <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-200"
-                                            onClick={() => handleDelete(animal.id)}
+                                            onClick={() => handleDelete(user.id)}
                                         >
                                             Eliminar
                                         </button>

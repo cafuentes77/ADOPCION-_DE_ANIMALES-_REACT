@@ -28,13 +28,15 @@ export const Usuario = sequelize.define('Usuario', {
         type: DataTypes.STRING(100),
         allowNull: false,
     },
-    admin:{
+    admin: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: false,
+        deleteAt: "destroyTime"
     },
-    
+
 }, {
     tableName: 'usuarios',
+    paranoid: true,
     timestamps: true,
 });

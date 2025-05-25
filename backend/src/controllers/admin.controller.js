@@ -1,5 +1,5 @@
 import { Usuario } from "../models/Usuario.model.js";
-import { validateUserData, userIfExist } from "../services/validateUserData.js";
+import { validateUserData, userIfExist, userNotExist } from "../services/validateUserData.js";
 import { sendEmail } from "../services/email.services.js";
 import { hashPassword } from "../services/auth.services.js";
 
@@ -86,7 +86,7 @@ export const updateUser = async (req, res) => {
 
 export const changeStateUser = async (req, res) => {
     try {
-        const { id, rol } = req.body;
+        const { id, estado } = req.body;
         const user = await Usuario.findByPk(id);
 
         if (!user) {
@@ -96,7 +96,8 @@ export const changeStateUser = async (req, res) => {
             });
         }
 
-        await Usuario.update({ rol }, {
+        await Usuario.update(
+            { admin: estado }, {
             where: { id }
         });
 
@@ -127,6 +128,32 @@ export const getUserDataById = async (req, res) => {
             code: 201,
             message: "Usuario encontrado con éxito",
             data: usuario
+        });
+    } catch (error) {
+        res.status(500).json({
+            code: 500,
+            message: "Error interno del servidor",
+        });
+
+    }
+}
+
+export const deleteUser = async (req, res) => {
+    try {
+
+        const { id } = req.params;
+        await userNotExist(null, id);
+
+        await Usuario.destroy({
+            where: {
+                id
+            }
+        });
+
+        res.status(200).json({
+            code: 200,
+            message: "Usuario eliminado con éxito",
+
         });
     } catch (error) {
         res.status(500).json({

@@ -50,7 +50,7 @@ export const UserAdminPanelPage = () => {
     return (
         <>
             <UserDetails />
-            <UserTable setIsOpenUserModal={setIsOpenUserModal} users={users} setModo={setModo} handleUpdate={handleUpdate} />
+            <UserTable setIsOpenUserModal={setIsOpenUserModal} setUsers={setUsers} users={users} setModo={setModo} handleUpdate={handleUpdate} />
             {isOpenUserModal && <ModalCrearUsuarios modo={modo} usuarioSeleccionado={usuarioSeleccionado} setIsOpenUserModal={setIsOpenUserModal} />}
         </>
     )
