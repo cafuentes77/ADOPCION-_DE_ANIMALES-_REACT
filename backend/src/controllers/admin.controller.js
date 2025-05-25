@@ -58,17 +58,14 @@ export const createUser = async (req, res) => {
 
 export const updateUser = async (req, res) => {
     try {
-        const { nombre, apellido, email, telefono, password } = req.body;
+        const { nombre, apellido, email, telefono } = req.body;
 
-        await userIfExist(email)
-        validateUserData(nombre, apellido, email, telefono, password)
-        const hash = hashPassword(password)
+        validateUserData(nombre, apellido, email, null, telefono)
 
         await Usuario.update({
             nombre,
             apellido,
             email,
-            password: hash,
             telefono
         }, {
             where: {
@@ -114,4 +111,28 @@ export const changeStateUser = async (req, res) => {
         });
     }
 
+}
+
+export const getUserDataById = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const usuario = await Usuario.findOne({
+            attributes: { exclude: ["password", "admin", "createdAt", "updatedAt"] },
+            where: {
+                id
+            }
+        });
+
+        res.status(201).json({
+            code: 201,
+            message: "Usuario encontrado con éxito",
+            data: usuario
+        });
+    } catch (error) {
+        res.status(500).json({
+            code: 500,
+            message: "Error interno del servidor",
+        });
+
+    }
 }

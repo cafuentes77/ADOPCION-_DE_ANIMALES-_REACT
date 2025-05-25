@@ -5,8 +5,9 @@ import { ModalCrearUsuarios } from './components/ModalCrearUsuarios';
 
 export const UserAdminPanelPage = () => {
     const [users, setUsers] = useState([]);
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpenUserModal, setIsOpenUserModal] = useState(false)
     const [modo, setModo] = useState("")
+    const [usuarioSeleccionado, setUsuarioSeleccionado] = useState("")
 
     const getUsers = async () => {
         try {
@@ -34,11 +35,23 @@ export const UserAdminPanelPage = () => {
         getAllUsers();
     }, []);
 
+    const handleUpdate = async (id) => {
+        try {
+            setIsOpenUserModal(true)
+            setModo("modificar")
+            setUsuarioSeleccionado(id)
+            console.log(id);
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
+
     return (
         <>
             <UserDetails />
-            <UserTable setIsOpen={setIsOpen} users={users} setModo={setModo} />
-            {isOpen && <ModalCrearUsuarios modo={modo} setIsOpen={setIsOpen} />}
+            <UserTable setIsOpenUserModal={setIsOpenUserModal} users={users} setModo={setModo} handleUpdate={handleUpdate} />
+            {isOpenUserModal && <ModalCrearUsuarios modo={modo} usuarioSeleccionado={usuarioSeleccionado} setIsOpenUserModal={setIsOpenUserModal} />}
         </>
     )
 }

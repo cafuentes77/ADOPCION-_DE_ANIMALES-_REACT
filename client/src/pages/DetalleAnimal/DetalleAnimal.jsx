@@ -9,7 +9,6 @@ export const DetalleAnimal = () => {
     const [animal, setAnimal] = useState("")
     const { enqueueSnackbar } = useSnackbar();
     const { usuario } = useSelector((state) => state.auth);
-    console.log(usuario);
 
     const handleClick = async () => {
         try {
@@ -22,7 +21,7 @@ export const DetalleAnimal = () => {
                 body: formData
             }
 
-            const url = `http://localhost:3000/api/v1/adopciones/solicitar-adopcion`
+            const url = "http://localhost:3000/api/v1/adopciones/solicitar-adopcion"
             const response = await fetch(url, requestOptions)
             const data = await response.json()
 
@@ -33,7 +32,7 @@ export const DetalleAnimal = () => {
                 enqueueSnackbar(data.message, { variant: "error" });
             }
         } catch (error) {
-
+            console.log(error);
         }
     }
 

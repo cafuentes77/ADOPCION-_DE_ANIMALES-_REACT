@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { CreateUserButton } from "./CreateUserButton";
 import { useSnackbar } from "notistack";
+import { FaEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
-export const UserTable = ({ users, setIsOpen, setModo }) => {
+export const UserTable = ({ users, setIsOpen, setModo, handleUpdate }) => {
     const [usersData, setUsersData] = useState([]);
     const { enqueueSnackbar } = useSnackbar();
 
@@ -38,7 +40,6 @@ export const UserTable = ({ users, setIsOpen, setModo }) => {
         }
     };
 
-
     return (
         <div>
             <div className="w-[57%] flex justify-center">
@@ -56,6 +57,16 @@ export const UserTable = ({ users, setIsOpen, setModo }) => {
                             </th>
                             <th className="px-6 py-3 text-left text-sm font-medium text-gray-600 uppercase tracking-wider">
                                 Rol
+                            </th>
+                            <th className="px-6 py-3 text-sm font-medium text-gray-600 uppercase tracking-wider">
+                                <div className=" flex justify-center" >
+                                    <FaEdit fill="#58ce74" className="text-xl" />
+                                </div>
+                            </th>
+                            <th className="px-6 py-3 text-sm font-medium text-gray-600 uppercase tracking-wider">
+                                <div className=" flex justify-center" >
+                                    <MdDelete fill="#f42a55" className="text-xl" />
+                                </div>
                             </th>
                         </tr>
                     </thead>
@@ -77,6 +88,25 @@ export const UserTable = ({ users, setIsOpen, setModo }) => {
                                         <option value="Administrador">Administrador</option>
                                         <option value="Usuario">Usuario</option>
                                     </select>
+                                </td>
+                                <td className="px-6 py-4 text-sm text-gray-800">
+                                    <div className="flex justify-center items-center min-h-full">
+                                        <button className="px-4 py-2 bg-green-400 text-white rounded-md hover:bg-green-600 transition duration-200"
+                                            onClick={(e) => handleUpdate(user.id)}
+                                        >
+                                            Modificar
+                                        </button>
+                                    </div>
+                                </td>
+
+                                <td className="px-6 py-4 text-sm text-gray-800">
+                                    <div className="flex justify-center items-center min-h-full">
+                                        <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition duration-200"
+                                            onClick={() => handleDelete(animal.id)}
+                                        >
+                                            Eliminar
+                                        </button>
+                                    </div>
                                 </td>
                             </tr>
                         ))}
