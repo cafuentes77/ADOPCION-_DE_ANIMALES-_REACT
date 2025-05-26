@@ -3,10 +3,14 @@ import { IoIosHome } from "react-icons/io";
 import { GoPersonFill } from "react-icons/go";
 import { FaDog } from "react-icons/fa6";
 import { RiAdminFill } from "react-icons/ri";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 
 export const Navbar = () => {
+    const { usuario } = useSelector((state) => state.auth);
     const token = localStorage.getItem("token")
+
 
     const logout = () => {
         localStorage.removeItem("token")
@@ -46,7 +50,7 @@ export const Navbar = () => {
 
                         {
                             token && <h4 className="cursor-pointer flex items-center font-bold text-lg text-black transition-all duration-300 hover:text-slate-500 hover:translate-x-1">
-                                <NavLink className="flex items-center">
+                                <NavLink to={`/mi-cuenta/${usuario?.id}`} className="flex items-center">
                                     <GoPersonFill className="mr-2" /> Mi Cuenta
                                 </NavLink>
                             </h4>

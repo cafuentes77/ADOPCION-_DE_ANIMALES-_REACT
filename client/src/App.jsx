@@ -11,6 +11,7 @@ import { Navbar } from "./components/Navbar";
 import { setAuthFromStorage } from "./store/authSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import { MyAccountPage } from "./pages/MyAccount/MyAccountPage";
 
 
 export const App = () => {
@@ -33,6 +34,7 @@ export const App = () => {
         <Route path="/admin/users" element={<UserAdminPanelPage />} />
         <Route path="/admin/animales" element={<AnimalAdminPanelPage />} />
         <Route path="/detalle-animal/:id" element={<DetalleAnimal />} />
+        <Route path="/mi-cuenta/:id" element={<MyAccountPage />} />
       </Routes>
     </BrowserRouter>
   );
