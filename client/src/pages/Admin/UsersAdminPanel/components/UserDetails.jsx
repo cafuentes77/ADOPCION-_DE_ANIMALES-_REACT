@@ -8,12 +8,12 @@ export const UserDetails = () => {
         <>
             {usuario && (
                 <div className="flex justify-center mt-5">
-                    <div className="max-w-md w-full bg-white shadow-md rounded-lg border p-6">
+                    <div className="max-w-md w-full bg-white shadow-md rounded-lg border p-6 border-gray-600">
                         <div className="flex items-center space-x-4">
                             <img
                                 src={`https://robohash.org/${usuario.nombre}`}
                                 alt="Avatar del usuario"
-                                className="w-20 h-20 rounded-full object-cover border"
+                                className="w-20 h-20 rounded-full object-cover border border-gray-400"
                             />
                             <div>
                                 <h2 className="text-xl font-semibold text-gray-800">

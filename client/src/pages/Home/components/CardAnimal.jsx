@@ -19,10 +19,10 @@ export const CardAnimal = () => {
     }, []);
 
     return (
-        <div className="flex justify-center gap-7 mt-5">
+        <div className="flex justify-center gap-2 mt-5">
             {animales &&
                 animales.map((animal) => (
-                    <div className="min-w-[300px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200"
+                    <div className="min-w-[300px] bg-white rounded-2xl shadow-md overflow-hidden border border-gray-600"
                         key={animal.id}
                     >
                         <img

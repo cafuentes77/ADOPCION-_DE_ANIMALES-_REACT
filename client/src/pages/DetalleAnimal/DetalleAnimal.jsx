@@ -15,6 +15,7 @@ export const DetalleAnimal = () => {
 
             const formData = new FormData()
             formData.append("id_animal", id)
+            formData.append("id_usuario", usuario?.id)
 
             const requestOptions = {
                 method: "POST",
@@ -28,7 +29,10 @@ export const DetalleAnimal = () => {
             if (data.code === 201) {
                 enqueueSnackbar(data.message, { variant: "success" });
                 localStorage.setItem("token", data.token);
-            } else {
+            } else if (data.code === 400) {
+                enqueueSnackbar(data.message, { variant: "warning" });
+            }
+            else {
                 enqueueSnackbar(data.message, { variant: "error" });
             }
         } catch (error) {
@@ -54,7 +58,7 @@ export const DetalleAnimal = () => {
 
 
     return (
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl mt-4 shadow-lg overflow-hidden border border-gray-200">
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl mt-4 shadow-lg overflow-hidden border border-gray-600">
             {animal && (
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     {/* Imagen */}

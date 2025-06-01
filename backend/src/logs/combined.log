@@ -780,3 +780,35 @@
 2025-05-26 17:40:46 info: Conexión a la base de datos establecida correctamente.
 2025-05-26 17:40:46 info: Modelos sincronizados correctamente.
 2025-05-26 17:40:46 info: Servidor escuchando en el puerto: 3000
+2025-05-26 19:47:11 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:15 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:31 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:39 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:50 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 20:25:18 info: Conexión a la base de datos establecida correctamente.
+2025-05-26 20:25:19 info: Modelos sincronizados correctamente.
+2025-05-26 20:25:19 info: Servidor escuchando en el puerto: 3000
+2025-05-26 20:29:03 info: Conexión a la base de datos establecida correctamente.
+2025-05-26 20:29:03 info: Modelos sincronizados correctamente.
+2025-05-26 20:29:03 info: Servidor escuchando en el puerto: 3000
+2025-05-26 20:29:32 info: Conexión a la base de datos establecida correctamente.
+2025-05-26 20:29:33 info: Modelos sincronizados correctamente.
+2025-05-26 20:29:33 info: Servidor escuchando en el puerto: 3000
+2025-05-26 20:30:48 info: Conexión a la base de datos establecida correctamente.
+2025-05-26 20:30:48 info: Modelos sincronizados correctamente.
+2025-05-26 20:30:48 info: Servidor escuchando en el puerto: 3000
+2025-05-26 20:32:26 info: Conexión a la base de datos establecida correctamente.
+2025-05-26 20:32:26 info: Modelos sincronizados correctamente.
+2025-05-26 20:32:26 info: Servidor escuchando en el puerto: 3000
+2025-05-26 21:31:15 info: Conexión a la base de datos establecida correctamente.
+2025-05-26 21:31:16 info: Modelos sincronizados correctamente.
+2025-05-26 21:31:16 info: Servidor escuchando en el puerto: 3000
+2025-05-28 20:07:06 info: Conexión a la base de datos establecida correctamente.
+2025-05-28 20:07:07 info: Modelos sincronizados correctamente.
+2025-05-28 20:07:07 info: Servidor escuchando en el puerto: 3000
+2025-05-28 21:59:15 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-28 21:59:19 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-31 18:58:51 info: Conexión a la base de datos establecida correctamente.
+2025-05-31 18:58:52 info: Modelos sincronizados correctamente.
+2025-05-31 18:58:52 info: Servidor escuchando en el puerto: 3000
+2025-05-31 20:18:40 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato

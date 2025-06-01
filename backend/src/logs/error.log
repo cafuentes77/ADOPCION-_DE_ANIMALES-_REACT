@@ -60,3 +60,11 @@
 2025-05-25 00:16:44 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
 2025-05-25 00:16:56 error: Ha ocurrido un error en createUser Controller La contraseña debe contener 9 caracteres, 4 letras, 4 números, un carácter especial y como mínimo una mayúscula, una minúscula
 2025-05-25 00:17:08 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-26 19:47:11 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:15 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:31 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:39 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-26 19:47:50 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-28 21:59:15 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-28 21:59:19 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-31 20:18:40 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato

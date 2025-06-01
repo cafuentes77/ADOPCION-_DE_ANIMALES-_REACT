@@ -8,9 +8,23 @@ import { Especie } from "../models/Especie.model.js";
 export const crearSolicitudAdopcion = async (req, res) => {
     try {
         const { id_usuario, id_animal } = req.body;
-        const id = 2
+
+        const adopcionExistente = await Adopcion.findOne({
+            where: {
+                id_usuario,
+                id_animal,
+            },
+        });
+
+        if (adopcionExistente) {
+            return res.status(400).json({
+                code: 400,
+                message: "Ya existe una solicitud de adopción para este usuario y animal"
+            });
+        }
+
         await Adopcion.create({
-            id_usuario: 2,
+            id_usuario,
             id_animal,
             estado: "pendiente",
         })
