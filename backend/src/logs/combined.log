@@ -877,3 +877,36 @@
 2025-06-18 20:21:11 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
 2025-06-18 20:21:11 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
 2025-06-18 20:26:59 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:28:31 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 20:28:31 info: Modelos sincronizados correctamente.
+2025-06-18 20:28:31 info: Servidor escuchando en el puerto: 3000
+2025-06-18 20:31:43 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 20:31:43 info: Modelos sincronizados correctamente.
+2025-06-18 20:31:43 info: Servidor escuchando en el puerto: 3000
+2025-06-18 20:39:01 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:40:15 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:40:15 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:54:07 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 20:54:08 info: Modelos sincronizados correctamente.
+2025-06-18 20:54:08 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:06:54 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:06:54 info: Modelos sincronizados correctamente.
+2025-06-18 21:06:54 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:08:46 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:08:48 info: Modelos sincronizados correctamente.
+2025-06-18 21:08:48 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:09:17 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:09:17 info: Modelos sincronizados correctamente.
+2025-06-18 21:09:17 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:10:21 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:10:21 info: Modelos sincronizados correctamente.
+2025-06-18 21:10:21 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:13:03 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:13:03 info: Modelos sincronizados correctamente.
+2025-06-18 21:13:03 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:45:02 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:45:03 info: Modelos sincronizados correctamente.
+2025-06-18 21:45:03 info: Servidor escuchando en el puerto: 3000
+2025-06-18 21:45:12 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 21:45:12 info: Modelos sincronizados correctamente.
+2025-06-18 21:45:12 info: Servidor escuchando en el puerto: 3000

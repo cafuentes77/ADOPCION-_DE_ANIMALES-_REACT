@@ -8,7 +8,7 @@ export const DetalleAnimal = () => {
     const { id } = useParams()
     const [animal, setAnimal] = useState("")
     const { enqueueSnackbar } = useSnackbar();
-    const { usuario } = useSelector((state) => state.auth);
+    const { usuario, token } = useSelector((state) => state.auth);
 
     const handleClick = async () => {
         try {
@@ -17,9 +17,13 @@ export const DetalleAnimal = () => {
             formData.append("id_animal", id)
             formData.append("id_usuario", usuario?.id)
 
+            const myHeaders = new Headers();
+            myHeaders.append("Authorization", `Bearer ${token}`);
+
             const requestOptions = {
                 method: "POST",
-                body: formData
+                body: formData,
+                headers: myHeaders
             }
 
             const url = "http://localhost:3000/api/v1/adopciones/solicitar-adopcion"
