@@ -812,3 +812,68 @@
 2025-05-31 18:58:52 info: Modelos sincronizados correctamente.
 2025-05-31 18:58:52 info: Servidor escuchando en el puerto: 3000
 2025-05-31 20:18:40 error: Ha ocurrido un error en createUser Controller El Teléfono Proporcionado no cumple con el formato
+2025-05-31 20:38:15 error: Ha ocurrido un error en issuetoken Middleware Email o contraseña incorrectos
+2025-05-31 23:12:25 info: Conexión a la base de datos establecida correctamente.
+2025-05-31 23:12:25 info: Modelos sincronizados correctamente.
+2025-05-31 23:12:25 info: Servidor escuchando en el puerto: 3000
+2025-05-31 23:14:47 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:14:47 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:15:53 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:15:53 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:15:56 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:15:56 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:19 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:19 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:20 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:20 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:38 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:38 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:39 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:16:39 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:18:27 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:18:27 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:19:45 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:19:45 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:22:52 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:22:52 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:22:54 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:22:54 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:23:23 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:23:23 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:23:24 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:23:24 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:28:27 error: Ha ocurrido un error en createUser Controller El Nombre Proporcionado no cumple con el formato
+2025-05-31 23:36:49 info: Conexión a la base de datos establecida correctamente.
+2025-05-31 23:36:49 info: Modelos sincronizados correctamente.
+2025-05-31 23:36:49 info: Servidor escuchando en el puerto: 3000
+2025-05-31 23:37:51 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-05-31 23:57:16 info: Conexión a la base de datos establecida correctamente.
+2025-05-31 23:57:16 info: Modelos sincronizados correctamente.
+2025-05-31 23:57:16 info: Servidor escuchando en el puerto: 3000
+2025-06-11 18:23:49 info: Conexión a la base de datos establecida correctamente.
+2025-06-11 18:23:49 info: Modelos sincronizados correctamente.
+2025-06-11 18:23:49 info: Servidor escuchando en el puerto: 3000
+2025-06-18 19:47:13 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 19:47:13 info: Modelos sincronizados correctamente.
+2025-06-18 19:47:13 info: Servidor escuchando en el puerto: 3000
+2025-06-18 19:47:38 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:47:38 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:47:45 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:47:45 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:48:42 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:48:42 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:48:58 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 19:48:58 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:08:28 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 20:08:28 info: Modelos sincronizados correctamente.
+2025-06-18 20:08:28 info: Servidor escuchando en el puerto: 3000
+2025-06-18 20:10:34 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:14:35 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 20:14:35 info: Modelos sincronizados correctamente.
+2025-06-18 20:14:35 info: Servidor escuchando en el puerto: 3000
+2025-06-18 20:15:52 info: Conexión a la base de datos establecida correctamente.
+2025-06-18 20:15:52 info: Modelos sincronizados correctamente.
+2025-06-18 20:15:52 info: Servidor escuchando en el puerto: 3000
+2025-06-18 20:21:11 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:21:11 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado
+2025-06-18 20:26:59 error: Ha ocurrido un error en authMiddleware Middleware Token no proporcionado

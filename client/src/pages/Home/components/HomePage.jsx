@@ -1,8 +1,15 @@
-import React from 'react'
 import { CardAnimal } from './CardAnimal'
+import { Carrusel } from './Carrusel'
 
 export const HomePage = () => {
     return (
-        <CardAnimal />
+        <>
+
+            <div>
+                <Carrusel />
+                <CardAnimal />
+            </div>
+
+        </>
     )
 }

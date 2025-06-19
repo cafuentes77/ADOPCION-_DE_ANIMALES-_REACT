@@ -28,7 +28,7 @@ export const CardAnimal = () => {
                         <img
                             src={animal.imagen}
                             alt={`Foto de ${animal.nombre}`}
-                            className="w-full h-80 object-cover"
+                            className="w-full h-48 object-cover"
                         />
                         <div className="p-4">
                             <h2 className="text-xl text-center font-bold text-gray-800">

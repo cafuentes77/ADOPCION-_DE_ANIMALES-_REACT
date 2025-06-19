@@ -16,7 +16,7 @@ export const CreateUserButton = ({ setIsOpenUserModal, setModo }) => {
         < >
 
             <div>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-6 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={handleCreate}
                 >
                     Crear Usuario
